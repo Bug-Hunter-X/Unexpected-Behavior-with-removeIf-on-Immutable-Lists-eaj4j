@@ -1,0 +1,3 @@
+# Kotlin `removeIf` Gotcha: Immutable Lists
+
+This example demonstrates a potential issue when using the `removeIf` function in Kotlin with immutable lists (`listOf`).  The `removeIf` function modifies the list in place, and thus requires a mutable list.  Attempting to use it with an immutable list will result in a compile-time error. The solution is to ensure you are using a mutable list when modifying the list's content.
